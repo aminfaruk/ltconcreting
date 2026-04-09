@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90" fill="currentColor">
+  <g transform="translate(100,42)">
+    <!-- Circle arc wrapping left-bottom-right, open at top-right -->
+    <path d="M18,-32 A40,40 0 1,0 18,-2" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <!-- Three vertical bars (pillars rising from circle) -->
+    <rect x="-14" y="-28" width="9" height="42" rx="1"/>
+    <rect x="-2" y="-38" width="9" height="52" rx="1"/>
+    <rect x="10" y="-22" width="9" height="36" rx="1"/>
+  </g>
+</svg>

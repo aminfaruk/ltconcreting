@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" fill="currentColor">
+  <g transform="translate(35,35)">
+    <!-- Circle arc -->
+    <path d="M14,-24 A30,30 0 1,0 14,-1" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Three vertical bars -->
+    <rect x="-10" y="-21" width="7" height="32" rx="1"/>
+    <rect x="-1" y="-29" width="7" height="40" rx="1"/>
+    <rect x="8" y="-17" width="7" height="28" rx="1"/>
+  </g>
+  <!-- Text -->
+  <text x="80" y="30" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-weight="800" font-size="18" letter-spacing="-0.5">LT Concreting</text>
+  <text x="80" y="50" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-weight="800" font-size="18" letter-spacing="-0.5">Services</text>
+</svg>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | LTCS</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#690005",
+                    "on-secondary-container": "#b9b8b8",
+                    "surface-dim": "#131313",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "surface-variant": "#353535",
+                    "on-tertiary": "#303031",
+                    "secondary": "#c8c6c6",
+                    "tertiary-container": "#919090",
+                    "on-secondary": "#303030",
+                    "error-container": "#93000a",
+                    "on-primary-container": "#4f1700",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-container": "#f95e14",
+                    "surface-container-low": "#1c1b1b",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "inverse-on-surface": "#313030",
+                    "inverse-primary": "#a83900",
+                    "tertiary": "#c7c6c6",
+                    "surface-container": "#20201f",
+                    "surface-bright": "#393939",
+                    "inverse-surface": "#e5e2e1",
+                    "on-surface-variant": "#e3bfb2",
+                    "surface-tint": "#ffb59a",
+                    "outline-variant": "#5a4138",
+                    "secondary-container": "#494949",
+                    "on-tertiary-container": "#292a2a",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary": "#5b1b00",
+                    "on-surface": "#e5e2e1",
+                    "surface": "#131313",
+                    "secondary-fixed": "#e4e2e2",
+                    "tertiary-fixed": "#e3e2e2",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "primary": "#ffb59a",
+                    "on-primary-fixed-variant": "#802a00",
+                    "surface-container-highest": "#353535",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-fixed": "#ffdbcf",
+                    "error": "#ffb4ab",
+                    "primary-fixed-dim": "#ffb59a",
+                    "background": "#131313",
+                    "outline": "#aa8a7e",
+                    "on-background": "#e5e2e1",
+                    "on-primary-fixed": "#380d00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(249, 94, 20, 0.3);
+        }
+        .gradient-border {
+            border-left: 2px solid;
+            border-image: linear-gradient(to bottom, #f95e14, #131313) 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-screen-2xl mx-auto px-8 py-6">
+<a href="index.html" class="flex items-center gap-3">
+<img src="logo.png" alt="LT Concreting Services" class="h-20 brightness-0 invert">
+</a>
+<div class="hidden md:flex items-center space-x-10 font-headline tracking-tighter uppercase font-bold">
+<a class="text-[#f95e14] border-b-2 border-[#f95e14] pb-1 hover:text-white transition-colors duration-300" href="projects.html">Projects</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="services.html">Services</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="about.html">Process</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="about.html">Expertise</a>
+</div>
+<a href="contact.html"><button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-sm font-label text-sm uppercase tracking-[0.1em] font-bold scale-95 active:duration-100 hover:shadow-[0_0_20px_rgba(249,94,20,0.2)] transition-all">
+                CONTACT US
+            </button></a>
+</div>
+</nav>
+<main class="pt-32 pb-24 overflow-x-hidden">
+<!-- Hero Section / Header -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-24 relative">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-surface-container-high pb-12">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-12 h-[2px] bg-primary-container"></span>
+<span class="font-headline font-bold text-primary tracking-widest uppercase text-xs">Portfolio &amp; Proof</span>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter leading-tight uppercase text-white">
+                        Proven Across <br/>Major Projects
+                    </h1>
+</div>
+<div class="md:w-1/3">
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                        Precision engineering meets structural integrity. Our track record spans the region's most ambitious architectural landmarks, delivered with technical excellence and uncompromising quality.
+                    </p>
+</div>
+</div>
+<!-- Decorative Datum Line -->
+<div class="absolute -right-4 top-0 h-full w-[2px] bg-primary/20 hidden lg:block"></div>
+</section>
+<!-- Projects Bento Grid -->
+<section class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Eastbourne - Featured Project -->
+<div class="md:col-span-8 bg-surface-container-low p-8 md:p-12 gradient-border relative group overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">apartment</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-white text-2xl mb-6 flex items-center gap-3">
+                            Eastbourne
+                            <span class="text-xs bg-surface-container-highest px-2 py-1 tracking-widest uppercase text-primary">Luxury Residential</span>
+</h3>
+<p class="font-body text-xl md:text-2xl text-on-surface leading-relaxed mb-10 max-w-2xl">
+                            High-end architectural concrete finishes across multiple levels. LTCS delivered precision pan-filling and post-tension remedial work on an accelerated programme for this landmark Canberra residential tower.
+                        </p>
+<div class="flex flex-wrap gap-x-12 gap-y-4">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Client</span><span class="text-white font-bold font-headline">Mirvac Construction</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-white font-bold font-headline">PT Pan-Fill, Rectification</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Location</span><span class="text-white font-bold font-headline">Canberra, ACT</span></div>
+</div>
+</div>
+</div>
+<!-- Canadian High Commission -->
+<div class="md:col-span-4 bg-surface-container-high p-8 flex flex-col justify-between border-b-2 border-primary-container">
+<div>
+<h3 class="font-headline font-bold text-white text-xl mb-6">Canadian High Commission</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                            Security-rated government facility requiring stringent quality control and compliance protocols. Concrete rectification and grouting under strict access and safety requirements.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-white text-sm font-bold font-headline">Rectification, Grouting</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-white text-sm font-bold font-headline">Government</span></div>
+</div>
+</div>
+<!-- Calypso Project -->
+<div class="md:col-span-4 bg-surface-container-high p-8 flex flex-col justify-between hover:bg-surface-container transition-colors duration-300">
+<div>
+<span class="material-symbols-outlined text-primary mb-6">engineering</span>
+<h3 class="font-headline font-bold text-white text-xl mb-6 uppercase tracking-tight">Calypso Project</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                            Multi-storey mixed-use development. LTCS managed full concrete delivery including post-tension pan-filling and coordination with structural engineers across complex slab designs.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-white text-sm font-bold font-headline">Full Concrete Delivery</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-white text-sm font-bold font-headline">Mixed-Use</span></div>
+</div>
+</div>
+<!-- One City Hill - Large Project Card -->
+<div class="md:col-span-8 bg-surface-container-low p-8 md:p-12 relative border-t border-surface-container-highest">
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div>
+<h3 class="font-headline font-bold text-white text-2xl mb-6">One City Hill</h3>
+<p class="font-body text-lg text-on-surface leading-relaxed mb-8">
+                                Large-scale commercial tower requiring a robust workforce and technical management across high-volume concrete pours, post-tension systems, and structural rectification works.
+                            </p>
+<div class="flex flex-wrap gap-x-12 gap-y-4">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Client</span><span class="text-white font-bold font-headline">Metro Construct</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-white font-bold font-headline">PT, Labour, Rectification</span></div>
+</div>
+</div>
+<div class="h-64 bg-surface-container-highest rounded-sm overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<img alt="One City Hill construction site" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyyB9b0kRynlbro_YeuV7FpuXAIJCz2sXu_rbrMMuUWH8dPOVvdUO7dem-r6XiXA4ubZJpqk2amZIPNsvcVRGViW4xjNSjKsdTW4kPV5C0SeTVCH4qG6T6Ru-KFEk82WKIkOBfHYujZNtiGZ7_yeZFlmf1HEBT6SAiUpKTHYG7le6UbYz5iqKt-Teax7t4lPOOk6xeZWrmyCcqtWRC33Qxz1fDcR6KXA-fmqTdPzdpZyxReWGBjDfWPy40o4bdvv4yOaLMEEFu4v_O"/>
+</div>
+</div>
+</div>
+<!-- 8 Yallourn Street -->
+<div class="md:col-span-4 bg-surface-container-high p-8 border-l-2 border-primary">
+<h3 class="font-headline font-bold text-white text-xl mb-6">8 Yallourn Street</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                        Industrial-grade concrete works with elevated safety and precision requirements. Post-tension tendon repair and structural grouting across a complex commercial floor plate.
+                    </p>
+<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-white text-sm font-bold font-headline">Tendon Repair, Grouting</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-white text-sm font-bold font-headline">Commercial</span></div>
+</div>
+</div>
+<!-- Renascent -->
+<div class="md:col-span-4 bg-surface-container-low p-8 flex flex-col justify-between border-t border-surface-container-highest">
+<div>
+<h3 class="font-headline font-bold text-white text-xl mb-6 uppercase tracking-tight">Renascent</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                            High-spec refurbishment and remedial concrete works. LTCS provided specialist labour and rectification services across multiple Renascent-managed sites in the ACT region.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-white text-sm font-bold font-headline">Rectification, Labour</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Client</span><span class="text-white text-sm font-bold font-headline">Renascent Group</span></div>
+</div>
+</div>
+<!-- Multi-Project Delivery -->
+<div class="md:col-span-4 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-8 flex flex-col justify-center border-l border-surface-container-highest">
+<div class="mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">verified</span>
+</div>
+<h3 class="font-headline font-bold text-white text-xl mb-4">Multi-Site Operations</h3>
+<p class="font-body text-on-surface leading-relaxed mb-6">
+                        LTCS maintains the capability to run concurrent projects across multiple sites without compromising quality or programme. Scalable workforce deployment from small specialist crews to full slab teams.
+                    </p>
+<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Capacity</span><span class="text-white text-sm font-bold font-headline">Concurrent Delivery</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Region</span><span class="text-white text-sm font-bold font-headline">ACT & NSW</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-screen-2xl mx-auto px-8 mt-32 mb-12">
+<div class="bg-surface-container-low border border-surface-container-highest p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
+</div>
+<h2 class="font-headline text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8 relative z-10">
+                    Ready to build <br/>your legacy?
+                </h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center relative z-10">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-sm font-label text-sm uppercase tracking-[0.2em] font-black hover:shadow-[0_0_30px_rgba(249,94,20,0.3)] transition-all">
+                        REQUEST A CAPABILITY STATEMENT
+                    </button>
+<button class="border border-surface-container-highest bg-surface-container-low text-white px-10 py-4 rounded-sm font-label text-sm uppercase tracking-[0.2em] font-black hover:bg-surface-container-high transition-all">
+                        VIEW ALL SERVICES
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1c1b1b] w-full border-t border-[#2a2a2a]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto px-8 py-20">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 mb-4">
+<img src="logo.png" alt="LT Concreting Services" class="h-24 brightness-0 invert">
+</div>
+<p class="text-gray-500 font-inter text-sm tracking-wide leading-relaxed">
+                    Mastering the art of high-end specialist concreting across industrial, commercial, and luxury residential sectors.
+                </p>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Expertise</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Architectural Concrete</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Structural Foundations</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Industrial Paving</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Technical Refurbishment</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Standards</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Safety Standards</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Technical Specs</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Quality Assurance</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Environmental Impact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Privacy Policy</a></li>
+<li><a class="text-gray-500 hover:text-[#ffb59a] transition-all font-inter text-sm tracking-wide" href="#">Terms of Service</a></li>
+<li class="flex gap-4 mt-6">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">mail</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 py-8 border-t border-[#2a2a2a] flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-gray-500 font-inter text-sm tracking-wide">© 2024 LT CONCRETING SERVICES. ALL RIGHTS RESERVED. ABN 18 639 428 470</span>
+<div class="flex gap-8">
+<span class="text-[#f95e14] font-headline font-bold text-xs tracking-widest uppercase">Precision. Integrity. Mass.</span>
+</div>
+</div>
+</footer>
+</body></html>
