@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary": "#c2410c", // Burnt Orange
+                "on-primary": "#ffffff",
+                "background": "#fbf9f6", // Warm Masonry Background
+                "surface": "#ffffff",
+                "surface-container-low": "#f5f3f0", // Light Grey Card
+                "surface-container-high": "#ebe9e6",
+                "surface-container-highest": "#e1deda",
+                "on-background": "#1b1c1a",
+                "on-surface": "#1b1c1a",
+                "on-surface-variant": "#4d4d4d",
+                "outline": "#d1cfcc",
+                "secondary": "#57534e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow:hover {
+            text-shadow: 0 0 8px rgba(194, 65, 12, 0.2);
+        }
+        .bg-burnt-orange-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+        }
+        .datum-line {
+            width: 2px;
+            background-color: #c2410c;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black text-[#1b1c1a] tracking-tighter">LTCS</div>
+<div class="hidden md:flex items-center space-x-12 font-['Plus_Jakarta_Sans'] font-bold tracking-tight">
+<a class="text-[#1b1c1a]/70 hover:text-orange-600 transition-colors duration-300" href="#">Projects</a>
+<a class="text-orange-700 border-b-2 border-orange-700 pb-1 hover:text-orange-600 transition-colors duration-300" href="#">Services</a>
+<a class="text-[#1b1c1a]/70 hover:text-orange-600 transition-colors duration-300" href="#">About</a>
+<a class="text-[#1b1c1a]/70 hover:text-orange-600 transition-colors duration-300" href="#">Team</a>
+</div>
+<button class="bg-burnt-orange-gradient text-on-primary font-['Plus_Jakarta_Sans'] font-bold tracking-tight px-6 py-2.5 rounded-sm scale-95 active:duration-100 transition-all hover:shadow-[0_0_20px_rgba(194,65,12,0.2)]">
+                Contact Us
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Title Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="flex flex-col md:flex-row items-end gap-8">
+<div class="w-full md:w-2/3">
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter leading-none text-on-background uppercase">
+                        Technical<br/><span class="text-primary">Execution.</span>
+</h1>
+</div>
+<div class="w-full md:w-1/3 pb-4">
+<p class="text-secondary font-body text-lg border-l-2 border-primary pl-6">
+                        Specialist remedial engineering and structural concrete solutions for high-density infrastructure and architectural builds.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Service 01: Post-Tension & Remedial -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 relative">
+<div class="absolute -top-12 -left-4 font-headline text-[10rem] font-black text-surface-container-highest opacity-20 select-none">01</div>
+<h2 class="relative font-headline text-4xl font-bold tracking-tight text-on-background mb-8">Post-Tension &amp; <br/>Remedial Expertise</h2>
+<p class="text-secondary mb-12 max-w-md">Specialised services focusing on the integrity of post-tensioned slabs. We provide precision pan filling, tendon repair, and technical grouting to meet structural engineering specifications.</p>
+<div class="space-y-6">
+<div class="group flex items-center gap-4 p-4 bg-white border-l-4 border-primary transition-all hover:bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="architecture" data-weight="fill">architecture</span>
+<div>
+<h4 class="font-headline font-bold text-on-background uppercase tracking-wider text-sm">Pan Filling</h4>
+<p class="text-xs text-secondary">High-precision structural voids management.</p>
+</div>
+</div>
+<div class="group flex items-center gap-4 p-4 bg-white border-l-4 border-primary transition-all hover:bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="construction" data-weight="fill">construction</span>
+<div>
+<h4 class="font-headline font-bold text-on-background uppercase tracking-wider text-sm">Tendon Repair</h4>
+<p class="text-xs text-secondary">Restoring tensile strength to structural slabs.</p>
+</div>
+</div>
+<div class="group flex items-center gap-4 p-4 bg-white border-l-4 border-primary transition-all hover:bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="fluid_med" data-weight="fill">fluid_med</span>
+<div>
+<h4 class="font-headline font-bold text-on-background uppercase tracking-wider text-sm">Precision Grouting</h4>
+<p class="text-xs text-secondary">Epoxy and cementitious injection specialists.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden group rounded-lg shadow-xl">
+<img alt="Structural concrete reinforcement" class="w-full aspect-[16/10] object-cover grayscale brightness-110 group-hover:grayscale-0 transition-all duration-700" data-alt="Close-up of post-tension cables and steel reinforcement in a concrete slab under construction, dramatic industrial lighting with deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC3jWTrHOY0_sqtyVD_doG_xpvVOU5cM-QKIbhWBlE3wwpMbxlpZQXtqDsvQYQBA2LuJRx5Q_yCsLvNoVTjj84IOushoSLxRt_iRg478IFYdEO17__EWCi4hV20pVurx1cf97YpNw15TNN_b92E6yXX4wpu_O367mz8ZYkrfvBh4JldoXWTgOW9jAyCL9ApmDDNG6BSmdb22QXJOSHZN7216UxxxCq-pMWqh7v3c8BpPz1B274GEVHDg4UzFSthc5yMBS7qMcZRPNm"/>
+<div class="absolute inset-0 bg-primary/5 mix-blend-multiply"></div>
+<div class="absolute bottom-0 right-0 p-8">
+<div class="bg-white/90 backdrop-blur-md p-6 max-w-xs border-t-2 border-primary shadow-lg">
+<span class="text-primary font-headline font-bold block mb-2 uppercase text-xs tracking-widest">Case Study</span>
+<p class="text-on-background text-sm font-medium">Precision tendon restoration on 40-story residential core.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service 02: Concrete Rectification (Bento Grid) -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<span class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-4 block">Section 02</span>
+<h2 class="font-headline text-5xl font-black text-on-background uppercase tracking-tighter">Concrete Rectification <br/>&amp; Remediation</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-surface-container-low p-10 border-t-4 border-primary flex flex-col justify-between shadow-sm">
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-background mb-6 uppercase">Structural Repairs</h3>
+<p class="text-secondary leading-relaxed mb-8">Heavy-duty remediation for load-bearing elements. Including carbon fiber reinforcement, concrete cancer treatment, and crack injection systems designed for long-term stability.</p>
+</div>
+<ul class="space-y-4 font-label text-sm uppercase tracking-wide text-on-background">
+<li class="flex items-center gap-3"><span class="datum-line h-4"></span> Carbon Fiber Laminates</li>
+<li class="flex items-center gap-3"><span class="datum-line h-4"></span> Steel Reinforcement Treatment</li>
+<li class="flex items-center gap-3"><span class="datum-line h-4"></span> Epoxy Injection</li>
+</ul>
+</div>
+<div class="md:col-span-2 bg-surface-container-high relative overflow-hidden h-[400px] rounded-sm shadow-sm">
+<img alt="Structural repair site" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 transition-opacity duration-500" data-alt="Industrial construction worker applying structural sealant to a massive concrete pillar, high contrast black and white with orange sparks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLJUC9zOgkpYFGFLILohb55iGlzO3DZCuWKugjVmPpwtKZUPa7_bCDOW16ArgreBcrrc4H4hGNgJ79eMxCZ_zaHBkHvU0Nfl984N76TRJ6Et86ew-q0F1ZB3LQZ-wXKkYfNk0BI7YCbf0n9ctPmBtcqRa-F-RWAKfMfSIKDkJgK84zNTFY_Ib9FQ1BushIQ-Lw0ghuxffH27pm2_qjMYIYdYS_Suw4MMiXUftAkhlG9XmnEIIEqYrHj4QWkFLOoiroVhHRYVCjBSra"/>
+</div>
+<div class="md:col-span-1 bg-white p-8 border border-outline/30 shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="architecture" data-weight="fill">architecture</span>
+<h4 class="font-headline font-bold text-on-background uppercase mb-4">Non-Structural</h4>
+<p class="text-sm text-secondary">Surface finishing, patching, and aesthetic correction for architectural concrete facades.</p>
+</div>
+<div class="md:col-span-1 bg-white p-8 border border-outline/30 shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="speed" data-weight="fill">speed</span>
+<h4 class="font-headline font-bold text-on-background uppercase mb-4">Rapid Setting</h4>
+<p class="text-sm text-secondary">Fast-turnaround remediation for high-traffic industrial floor environments.</p>
+</div>
+<div class="md:col-span-2 bg-primary p-10 flex flex-col justify-center shadow-lg">
+<h3 class="font-headline text-2xl font-black text-on-primary uppercase mb-4">Immediate Mobilisation</h3>
+<p class="text-on-primary font-medium text-lg leading-tight">Our rectification teams are geared for technical complexity and tight deadlines.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service 03: Labour & Equipment (Asymmetric) -->
+<section class="bg-surface-container-low py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2">
+<div class="relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 border border-primary/20 pointer-events-none"></div>
+<img alt="Concrete crew on site" class="w-full h-[600px] object-cover shadow-2xl rounded-sm" data-alt="Professional construction crew in high-visibility gear working around heavy machinery on a large-scale concrete foundation at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhthNsUdL2UiBvAbN08knbj5xHsQJFpUYVnvw3H1BrQadsNH4QnK6Eq8hpIV8q-4Njk16D5PI_jRCuJ0kyuzt--STNW7gbD9qJaqceB3K-s-Mh40o-B1yoOzvBLJDB78Pgr2CnDJZ7zfWP81Y1pIHOWd8csNdG3nIhL3VAhh85GyB0xv_aWwhaWi_uoa8EIJ9jhh2YAR2OX3L35q_x35r99sYA-1ItJQK7x_4S2OUeWHgKc7-nNdDbEoCgOW0WJv5EpAVUHcWhPz0M"/>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<span class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-4 block">Section 03</span>
+<h2 class="font-headline text-5xl font-black text-on-background uppercase tracking-tighter mb-8 leading-none">Labour &amp; Equipment <br/>Solutions</h2>
+<p class="text-xl text-secondary mb-12">We deploy fully self-sufficient crews equipped with Tier 1 plant and specialized tooling, ready to integrate into your site management flow instantly.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-primary font-headline text-4xl font-black mb-2">24h</div>
+<h5 class="text-on-background uppercase font-bold text-sm tracking-widest mb-2">Mobilisation</h5>
+<p class="text-xs text-secondary">Emergency response and rapid site deployment capabilities.</p>
+</div>
+<div>
+<div class="text-primary font-headline text-4xl font-black mb-2">100%</div>
+<h5 class="text-on-background uppercase font-bold text-sm tracking-widest mb-2">Self-Sufficient</h5>
+<p class="text-xs text-secondary">All required generators, tooling, and consumables provided.</p>
+</div>
+<div>
+<div class="text-primary font-headline text-4xl font-black mb-2">Tier 1</div>
+<h5 class="text-on-background uppercase font-bold text-sm tracking-widest mb-2">Standard</h5>
+<p class="text-xs text-secondary">Compliance with the strictest safety and quality standards.</p>
+</div>
+<div>
+<div class="text-primary font-headline text-4xl font-black mb-2">Elite</div>
+<h5 class="text-on-background uppercase font-bold text-sm tracking-widest mb-2">Workforce</h5>
+<p class="text-xs text-secondary">Highly skilled tradesmen with extensive remedial experience.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service 04: Grouting & Caulking (Technical Grid) -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-bold text-on-background uppercase tracking-tighter mb-6">Grouting, Caulking &amp; <br/>Associated Works</h2>
+<div class="datum-line h-12 mb-6"></div>
+<p class="text-secondary mb-8">Technical jointing and sealing solutions for architectural and structural interfaces. We specialise in high-movement joints and precision grouting for pre-cast elements.</p>
+<button class="bg-white border border-outline text-on-background font-label font-bold tracking-[0.1em] px-8 py-4 rounded-sm hover:bg-surface-container-low transition-all shadow-sm">
+                            VIEW TECHNICAL SPECS
+                        </button>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-px bg-outline/20 border border-outline/20">
+<div class="bg-white p-10 group hover:bg-surface-container-low transition-colors">
+<span class="text-primary font-headline font-bold text-xs tracking-[0.2em] mb-4 block">04.1</span>
+<h4 class="text-on-background font-headline text-xl font-bold uppercase mb-4 group-hover:text-primary transition-colors">TMJ / PMJ</h4>
+<p class="text-sm text-secondary">Technical movement joints and permanent movement joints for high-rise residential and commercial slabs.</p>
+</div>
+<div class="bg-white p-10 group hover:bg-surface-container-low transition-colors">
+<span class="text-primary font-headline font-bold text-xs tracking-[0.2em] mb-4 block">04.2</span>
+<h4 class="text-on-background font-headline text-xl font-bold uppercase mb-4 group-hover:text-primary transition-colors">Dowel Sleeve Grouting</h4>
+<p class="text-sm text-secondary">Precision injection for structural continuity in pre-cast and modular concrete systems.</p>
+</div>
+<div class="bg-white p-10 group hover:bg-surface-container-low transition-colors">
+<span class="text-primary font-headline font-bold text-xs tracking-[0.2em] mb-4 block">04.3</span>
+<h4 class="text-on-background font-headline text-xl font-bold uppercase mb-4 group-hover:text-primary transition-colors">Perimeter Recesses</h4>
+<p class="text-sm text-secondary">Waterproofing and sealing of critical edge details and structural interfaces.</p>
+</div>
+<div class="bg-white p-10 group hover:bg-surface-container-low transition-colors">
+<span class="text-primary font-headline font-bold text-xs tracking-[0.2em] mb-4 block">04.4</span>
+<h4 class="text-on-background font-headline text-xl font-bold uppercase mb-4 group-hover:text-primary transition-colors">Specialist Caulking</h4>
+<p class="text-sm text-secondary">High-durability sealant application for architectural facades and industrial flooring.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Call to Action -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="bg-surface-container-low p-12 md:p-24 flex flex-col items-center text-center relative overflow-hidden rounded-xl border border-outline/20 shadow-lg">
+<div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, #c2410c 1px, transparent 0); background-size: 40px 40px;"></div>
+<h3 class="font-headline text-4xl md:text-6xl font-black text-on-background uppercase mb-8 relative z-10">Request Site Assessment</h3>
+<p class="text-secondary max-w-2xl mb-12 relative z-10 text-lg">Our engineering team provides detailed assessments and technical methodology for complex remediation projects across Australia.</p>
+<div class="flex flex-col sm:flex-row gap-6 relative z-10">
+<button class="bg-burnt-orange-gradient text-on-primary font-label font-bold tracking-[0.2em] px-12 py-5 rounded-sm hover:shadow-[0_0_30px_rgba(194,65,12,0.3)] transition-all">
+                        BOOK CONSULTATION
+                    </button>
+<button class="border-2 border-primary text-primary font-label font-bold tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-primary hover:text-on-primary transition-all">
+                        DOWNLOAD CAPABILITY STATEMENT
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] w-full rounded-t-3xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full max-w-7xl mx-auto font-['Manrope'] text-sm tracking-wide">
+<div class="md:col-span-1">
+<div class="text-lg font-bold text-[#1b1c1a] mb-4">LTCS</div>
+<p class="text-[#1b1c1a]/60 leading-relaxed">
+                    Setting the standard in technical concrete remediation and structural post-tension expertise. Precision engineered solutions for the construction industry.
+                </p>
+</div>
+<div>
+<h4 class="text-orange-700 font-semibold uppercase mb-6 tracking-widest text-xs">Services</h4>
+<ul class="space-y-4 text-[#1b1c1a]/60">
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Post-Tension Remedial</a></li>
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Concrete Rectification</a></li>
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Labour Hire</a></li>
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Technical Grouting</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-orange-700 font-semibold uppercase mb-6 tracking-widest text-xs">Links</h4>
+<ul class="space-y-4 text-[#1b1c1a]/60">
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Safety Standards</a></li>
+<li><a class="hover:text-orange-700 underline-offset-4 hover:underline transition-all" href="#">Technical Specs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-orange-700 font-semibold uppercase mb-6 tracking-widest text-xs">Contact</h4>
+<p class="text-[#1b1c1a]/60 mb-4">123 Industrial Boulevard,<br/>Sydney NSW 2000</p>
+<p class="text-on-background font-bold text-lg">+61 2 9000 0000</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-outline/20 text-center md:text-left text-[#1b1c1a]/60 text-xs tracking-widest uppercase font-['Manrope']">
+            © 2024 LT CONCRETING SERVICES. ALL RIGHTS RESERVED. ABN 45 123 456 789. © 2024 Architectura Construction Group. Built for the Human Architect.
+        </div>
+</footer>
+</body></html>
