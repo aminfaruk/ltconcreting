@@ -106,11 +106,37 @@
 <a class="font-space-grotesk tracking-tighter uppercase font-bold text-[#c2410c] border-b-2 border-[#c2410c] pb-1 hover:text-[#c2410c] transition-colors duration-300" href="services.html">Services</a>
 <a class="font-space-grotesk tracking-tighter uppercase font-bold text-[#4d4d4d] hover:text-[#c2410c] transition-colors duration-300" href="about.html">Expertise</a>
 </div>
-<a href="contact.html"><button class="bg-orange-gradient text-on-primary font-label font-bold tracking-[0.1em] px-6 py-3 rounded-sm scale-95 active:duration-100 transition-all hover:shadow-[0_0_20px_rgba(194,65,12,0.3)]">
+<a href="contact.html" class="hidden md:block"><button class="bg-orange-gradient text-on-primary font-label font-bold tracking-[0.1em] px-6 py-3 rounded-sm scale-95 active:duration-100 transition-all hover:shadow-[0_0_20px_rgba(194,65,12,0.3)]">
                 CONTACT US
             </button></a>
+<button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-12 h-12 text-[#1b1c1a]">
+<span class="material-symbols-outlined text-4xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<!-- Mobile menu panel -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-[#e7e5e0] bg-[#fbf9f6]">
+<div class="flex flex-col px-8 py-4">
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="index.html">Overview</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="projects.html">Projects</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#c2410c] py-3 border-b border-[#e7e5e0]" href="services.html">Services</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="about.html">Expertise</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3" href="contact.html">Contact Us</a>
+</div>
 </div>
 </nav>
+<script>
+(function() {
+  var btn = document.getElementById('mobile-menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var icon = document.getElementById('mobile-menu-icon');
+  if (!btn || !menu || !icon) return;
+  btn.addEventListener('click', function() {
+    var hidden = menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+    icon.textContent = hidden ? 'menu' : 'close';
+  });
+})();
+</script>
 <main class="pt-32">
 <!-- Hero Title Section -->
 <section class="max-w-screen-2xl mx-auto px-8 mb-20 md:mb-36">
@@ -226,7 +252,7 @@
 <div class="w-full lg:w-1/2">
 <span class="text-primary font-headline font-bold text-sm tracking-widest uppercase mb-4 block">Section 03</span>
 <h2 class="font-headline text-5xl font-black text-[#1b1c1a] uppercase tracking-tighter mb-8 leading-none">Labour &amp; Equipment <br/>Solutions</h2>
-<p class="text-xl text-secondary mb-12">We deploy fully self-sufficient crews equipped with Tier 1 plant and specialized tooling, ready to integrate into your site management flow instantly.</p>
+<p class="text-xl text-secondary mb-12">We deploy fully self-sufficient crews equipped with Tier 1 plant and specialized tooling, ready to integrate into your site management flow.</p>
 <div class="grid grid-cols-2 gap-8">
 <div>
 <div class="text-primary font-headline text-4xl font-black mb-2">24h</div>
@@ -279,7 +305,7 @@
 <div class="bg-background p-10 group hover:bg-surface-container-lowest transition-colors">
 <span class="text-primary font-headline font-bold text-xs tracking-[0.2em] mb-4 block">04.3</span>
 <h4 class="text-[#1b1c1a] font-headline text-xl font-bold uppercase mb-4 group-hover:text-primary transition-colors">Perimeter Recesses</h4>
-<p class="text-sm text-secondary">Waterproofing and sealing of critical edge details and structural interfaces.</p>
+<p class="text-sm text-secondary">Grouting and sealing of window facade pockets and structural interfaces.</p>
 </div>
 <div class="bg-background p-10 group hover:bg-surface-container-lowest transition-colors">
 <span class="text-primary font-headline font-bold text-xs tracking-[0.2em] mb-4 block">04.4</span>

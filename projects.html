@@ -129,11 +129,37 @@
 <a class="text-[#4d4d4d] hover:text-[#c2410c] transition-colors duration-300" href="services.html">Services</a>
 <a class="text-[#4d4d4d] hover:text-[#c2410c] transition-colors duration-300" href="about.html">Expertise</a>
 </div>
-<a href="contact.html"><button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-sm font-label text-sm uppercase tracking-[0.1em] font-bold scale-95 active:duration-100 hover:shadow-[0_0_20px_rgba(194,65,12,0.2)] transition-all">
+<a href="contact.html" class="hidden md:block"><button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-sm font-label text-sm uppercase tracking-[0.1em] font-bold scale-95 active:duration-100 hover:shadow-[0_0_20px_rgba(194,65,12,0.2)] transition-all">
                 CONTACT US
             </button></a>
+<button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-12 h-12 text-[#1b1c1a]">
+<span class="material-symbols-outlined text-4xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<!-- Mobile menu panel -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-[#e7e5e0] bg-[#fbf9f6]">
+<div class="flex flex-col px-8 py-4">
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="index.html">Overview</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#c2410c] py-3 border-b border-[#e7e5e0]" href="projects.html">Projects</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="services.html">Services</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="about.html">Expertise</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3" href="contact.html">Contact Us</a>
+</div>
 </div>
 </nav>
+<script>
+(function() {
+  var btn = document.getElementById('mobile-menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var icon = document.getElementById('mobile-menu-icon');
+  if (!btn || !menu || !icon) return;
+  btn.addEventListener('click', function() {
+    var hidden = menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+    icon.textContent = hidden ? 'menu' : 'close';
+  });
+})();
+</script>
 <main class="pt-32 pb-24 overflow-x-hidden">
 <!-- Hero Section / Header -->
 <section class="relative mb-20 md:mb-36 overflow-hidden">
@@ -166,10 +192,6 @@
 </div>
 <div class="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-surface-container-high pb-12">
 <div class="max-w-3xl">
-<div class="flex items-center gap-3 mb-4">
-<span class="w-12 h-[2px] bg-primary-container"></span>
-<span class="font-headline font-bold text-primary tracking-widest uppercase text-xs">Portfolio &amp; Proof</span>
-</div>
 <h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter leading-tight uppercase text-[#1b1c1a]">
                         Proven Across <br/>Major Projects
                     </h1>
@@ -188,7 +210,7 @@
 <section class="max-w-screen-2xl mx-auto px-8">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
 <!-- Eastbourne - Featured Project -->
-<div class="md:col-span-8 bg-surface-container-low p-8 md:p-12 gradient-border relative group overflow-hidden">
+<div class="md:col-span-8 bg-surface-container-low p-8 pb-24 md:p-12 md:pb-28 gradient-border relative group overflow-hidden">
 <img alt="Eastbourne residential tower in Canberra" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" src="img-eastbourne.jpeg"/>
 <div class="absolute inset-0 bg-gradient-to-r from-surface-container-low/95 via-surface-container-low/70 to-transparent"></div>
 <div class="relative z-10">
@@ -196,84 +218,79 @@
                             Eastbourne
                             <span class="text-xs bg-surface-container-highest px-2 py-1 tracking-widest uppercase text-primary">Luxury Residential</span>
 </h3>
-<p class="font-body text-xl md:text-2xl text-on-surface leading-relaxed mb-10 max-w-2xl">
+<p class="font-body text-on-surface leading-relaxed font-medium max-w-2xl">
                             High-end architectural concrete finishes across multiple levels. LTCS delivered precision pan-filling and post-tension remedial work on an accelerated programme for this landmark Canberra residential tower.
                         </p>
-<div class="flex flex-wrap gap-x-12 gap-y-4">
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Client</span><span class="text-[#1b1c1a] font-bold font-headline">Mirvac Construction</span></div>
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] font-bold font-headline">PT Pan-Fill, Rectification</span></div>
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Location</span><span class="text-[#1b1c1a] font-bold font-headline">Canberra, ACT</span></div>
 </div>
+<div class="absolute bottom-8 md:bottom-12 inset-x-8 md:inset-x-12 z-10 flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] font-bold font-headline">PT Pan-Fill, Rectification</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-[#1b1c1a] font-bold font-headline">Luxury Residential</span></div>
 </div>
 </div>
 <!-- Canadian High Commission -->
-<div class="md:col-span-4 bg-surface-container-high p-8 flex flex-col justify-between border-b border-primary-container/60">
-<div>
-<h3 class="font-headline font-bold text-[#1b1c1a] text-xl mb-6">Canadian High Commission</h3>
-<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+<div class="md:col-span-4 bg-surface-container-high p-8 pb-24 md:p-12 md:pb-28 relative border-b border-primary-container/60">
+<h3 class="font-headline font-bold text-[#1b1c1a] text-xl mb-6 uppercase tracking-tight">Canadian High Commission</h3>
+<p class="font-body text-on-surface leading-relaxed font-medium">
                             Security-rated government facility requiring stringent quality control and compliance protocols. Concrete rectification and grouting under strict access and safety requirements.
                         </p>
-</div>
-<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div class="absolute bottom-8 md:bottom-12 inset-x-8 md:inset-x-12 flex flex-wrap gap-x-8 gap-y-2">
 <div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Rectification, Grouting</span></div>
 <div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Government</span></div>
 </div>
 </div>
 <!-- Calypso Project -->
-<div class="md:col-span-4 bg-surface-container-high p-8 flex flex-col justify-between hover:bg-surface-container transition-colors duration-300 relative overflow-hidden group">
+<div class="md:col-span-4 bg-surface-container-high p-8 pb-24 md:p-12 md:pb-28 relative overflow-hidden group hover:bg-surface-container transition-colors duration-300">
 <img alt="Calypso project site" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" src="img-calypso.jpeg"/>
 <div class="absolute inset-0 bg-gradient-to-b from-surface-container-high/95 via-surface-container-high/55 to-surface-container-high/95"></div>
 <div class="relative z-10">
 <h3 class="font-headline font-bold text-[#1b1c1a] text-xl mb-6 uppercase tracking-tight">Calypso Project</h3>
-<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+<p class="font-body text-on-surface leading-relaxed font-medium">
                             Multi-storey mixed-use development. LTCS managed full concrete delivery including post-tension pan-filling and coordination with structural engineers across complex slab designs.
                         </p>
 </div>
-<div class="relative z-10 flex flex-wrap gap-x-8 gap-y-2">
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Full Concrete Delivery</span></div>
+<div class="absolute bottom-8 md:bottom-12 inset-x-8 md:inset-x-12 z-10 flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">PT Pan-Fill, Rectification</span></div>
 <div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Mixed-Use</span></div>
 </div>
 </div>
 <!-- One City Hill - Large Project Card -->
-<div class="md:col-span-8 bg-surface-container-low p-8 md:p-12 relative border-t border-surface-container-highest">
-<div class="grid md:grid-cols-2 gap-8 items-center">
+<div class="md:col-span-8 bg-surface-container-low p-8 pb-24 md:p-12 md:pb-28 relative border-t border-surface-container-highest">
+<div class="grid md:grid-cols-2 gap-8">
 <div>
 <h3 class="font-headline font-bold text-[#1b1c1a] text-2xl mb-6">One City Hill</h3>
-<p class="font-body text-lg text-on-surface leading-relaxed mb-8">
+<p class="font-body text-on-surface leading-relaxed font-medium">
                                 Large-scale commercial tower requiring a robust workforce and technical management across high-volume concrete pours, post-tension systems, and structural rectification works.
                             </p>
-<div class="flex flex-wrap gap-x-12 gap-y-4">
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Client</span><span class="text-[#1b1c1a] font-bold font-headline">Metro Construct</span></div>
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] font-bold font-headline">PT, Labour, Rectification</span></div>
-</div>
 </div>
 <div class="h-64 bg-surface-container-highest rounded-sm overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
 <img alt="One City Hill construction site" class="w-full h-full object-cover" src="img-onecityhill.jpeg"/>
 </div>
 </div>
+<div class="absolute bottom-8 md:bottom-12 inset-x-8 md:inset-x-12 flex flex-wrap gap-x-8 gap-y-2">
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] font-bold font-headline">PT, Labour, Rectification</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-[#1b1c1a] font-bold font-headline">Commercial</span></div>
+</div>
 </div>
 <!-- 8 Yallourn Street -->
-<div class="md:col-span-4 bg-surface-container-high p-8 border-l border-primary/70">
-<h3 class="font-headline font-bold text-[#1b1c1a] text-xl mb-6">8 Yallourn Street</h3>
-<p class="font-body text-on-surface-variant leading-relaxed mb-8">
-                        Industrial-grade concrete works with elevated safety and precision requirements. Post-tension tendon repair and structural grouting across a complex commercial floor plate.
-                    </p>
-<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div class="md:col-span-4 bg-surface-container-high p-8 pb-24 md:p-12 md:pb-28 relative border-l border-primary/70">
+<h3 class="font-headline font-bold text-[#1b1c1a] text-xl mb-6 uppercase tracking-tight">8 Yallourn Street</h3>
+<p class="font-body text-on-surface leading-relaxed font-medium">
+                            Industrial-grade concrete works with elevated safety and precision requirements. Post-tension tendon repair and structural grouting across a complex commercial floor plate.
+                        </p>
+<div class="absolute bottom-8 md:bottom-12 inset-x-8 md:inset-x-12 flex flex-wrap gap-x-8 gap-y-2">
 <div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Tendon Repair, Grouting</span></div>
 <div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Commercial</span></div>
 </div>
 </div>
 <!-- Renascent -->
-<div class="md:col-span-4 bg-surface-container-low p-8 flex flex-col justify-between border-t border-surface-container-highest">
-<div>
+<div class="md:col-span-4 bg-surface-container-low p-8 pb-24 md:p-12 md:pb-28 relative border-t border-surface-container-highest">
 <h3 class="font-headline font-bold text-[#1b1c1a] text-xl mb-6 uppercase tracking-tight">Renascent</h3>
-<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+<p class="font-body text-on-surface leading-relaxed font-medium">
                             High-spec refurbishment and remedial concrete works. LTCS provided specialist labour and rectification services across multiple Renascent-managed sites in the ACT region.
                         </p>
-</div>
-<div class="flex flex-wrap gap-x-8 gap-y-2">
+<div class="absolute bottom-8 md:bottom-12 inset-x-8 md:inset-x-12 flex flex-wrap gap-x-8 gap-y-2">
 <div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Scope</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Rectification, Labour</span></div>
-<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Client</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Renascent Group</span></div>
+<div><span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">Sector</span><span class="text-[#1b1c1a] text-sm font-bold font-headline">Mixed-Use</span></div>
 </div>
 </div>
 <!-- Multi-Project Delivery -->

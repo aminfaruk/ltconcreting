@@ -131,11 +131,37 @@
 <a class="font-headline tracking-tighter uppercase font-bold text-[#4d4d4d] hover:text-[#c2410c] transition-colors duration-300" href="services.html">Services</a>
 <a class="font-headline tracking-tighter uppercase font-bold text-[#c2410c] border-b-2 border-[#c2410c] pb-1" href="about.html">Expertise</a>
 </div>
-<a href="contact.html"><button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold uppercase tracking-widest px-6 py-2 rounded-sm text-xs transition-all hover:shadow-[0_0_20px_rgba(194,65,12,0.2)] active:scale-95">
+<a href="contact.html" class="hidden md:block"><button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold uppercase tracking-widest px-6 py-2 rounded-sm text-xs transition-all hover:shadow-[0_0_20px_rgba(194,65,12,0.2)] active:scale-95">
                 CONTACT US
             </button></a>
+<button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-12 h-12 text-[#1b1c1a]">
+<span class="material-symbols-outlined text-4xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<!-- Mobile menu panel -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-[#e7e5e0] bg-[#fbf9f6]">
+<div class="flex flex-col px-8 py-4">
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="index.html">Overview</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="projects.html">Projects</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3 border-b border-[#e7e5e0]" href="services.html">Services</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#c2410c] py-3 border-b border-[#e7e5e0]" href="about.html">Expertise</a>
+<a class="font-headline tracking-tighter uppercase font-bold text-[#1b1c1a] hover:text-[#c2410c] transition-colors py-3" href="contact.html">Contact Us</a>
+</div>
 </div>
 </nav>
+<script>
+(function() {
+  var btn = document.getElementById('mobile-menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var icon = document.getElementById('mobile-menu-icon');
+  if (!btn || !menu || !icon) return;
+  btn.addEventListener('click', function() {
+    var hidden = menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+    icon.textContent = hidden ? 'menu' : 'close';
+  });
+})();
+</script>
 <main class="pt-32">
 <!-- Hero Section: Monolithic Introduction -->
 <section class="max-w-screen-2xl mx-auto px-8 mb-20 md:mb-36">
@@ -196,7 +222,7 @@
 <div>
 <h3 class="font-headline text-5xl font-bold text-[#1b1c1a] mb-8 tracking-tighter">POST-TENSION <br/>SPECIALISTS</h3>
 <p class="text-on-surface-variant text-lg mb-8">
-                            LTCS leads the market in post-tensioning (PT) services, critical for reducing structural weight and increasing spans in modern architecture. Our expertise covers both installation and complex remediation.
+                            LTCS leads the market in post-tensioning (PT) services, critical for reducing structural weight and increasing spans in modern architecture. Our expertise covers post-tension filling and complex remediation, as well as tension calculations, backed by efficient prep and filling workflows.
                         </p>
 <ul class="space-y-4">
 <li class="flex items-start gap-4">
@@ -253,7 +279,7 @@
 </section>
 <!-- Reputation Section -->
 <section class="max-w-screen-2xl mx-auto px-8 mb-20 md:mb-36">
-<div class="flex flex-col lg:flex-row gap-16 items-center">66\
+<div class="flex flex-col lg:flex-row gap-16 items-center">
 <div class="lg:w-1/2">
 <h2 class="font-headline text-5xl font-bold text-[#1b1c1a] mb-8 tracking-tighter uppercase">Our Reputation is Cast in Stone.</h2>
 <blockquote class="border-l border-primary/70 pl-8 py-4">
@@ -262,15 +288,17 @@
 </blockquote>
 </div>
 <div class="lg:w-1/2 relative">
-<div class="absolute -top-4 -left-4 w-24 h-24 border-t border-l border-primary"></div>
-<div class="bg-surface-container-high p-8 aspect-video flex items-center justify-center">
-<div class="text-center">
-<span class="material-symbols-outlined text-6xl text-primary/20 mb-4" data-icon="engineering" data-weight="fill" style="font-variation-settings: 'FILL' 1;">engineering</span>
-<p class="text-[#1b1c1a] font-headline text-2xl font-bold">5+ Years of Excellence</p>
-<p class="text-[#6b6b6b] uppercase tracking-widest text-xs mt-2">Serving the Australian Construction Industry</p>
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t border-l border-primary z-20 pointer-events-none"></div>
+<div class="relative aspect-video overflow-hidden group" style="box-shadow: 0 30px 80px -20px rgba(0, 105, 107, 0.35);">
+<img alt="LTCS crew working on site" class="absolute inset-0 w-full h-full object-cover object-[center_25%] transition-transform duration-700 group-hover:scale-[1.02]" src="img-workwork.jpeg" style="filter: brightness(0.95) contrast(1.08) saturate(0.95);"/>
+<div class="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-[#1b1c1a]/25 to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 ring-1 ring-inset ring-white/10 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 p-6 z-10 bg-gradient-to-t from-[#1b1c1a]/75 to-transparent w-full pr-20 pt-16">
+<p class="font-headline font-black text-white text-2xl tracking-tight drop-shadow-lg">5+ Years</p>
+<p class="text-white/80 uppercase tracking-widest text-[10px] font-bold">On Australian Sites</p>
 </div>
 </div>
-<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary"></div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary z-20 pointer-events-none"></div>
 </div>
 </div>
 </section>
