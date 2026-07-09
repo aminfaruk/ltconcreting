@@ -1,0 +1,8 @@
+# Files that should NOT be uploaded/served as public static assets.
+# (Cloudflare uses .gitignore-style patterns.)
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+vercel.json
+node_modules

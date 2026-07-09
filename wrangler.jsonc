@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers static-assets deployment for the LT Concreting site.
+  // Plain multi-page static HTML/CSS/JS — no build step required.
+  "name": "ltconcreting",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    // index.html lives at the repo root, so serve the whole root.
+    "directory": "./"
+  }
+}
